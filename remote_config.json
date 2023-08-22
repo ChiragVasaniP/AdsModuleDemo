@@ -1,0 +1,160 @@
+{
+  "parameters": {
+    "ad_interval_minute_for_interstitials": {
+      "defaultValue": {
+        "value": "0"
+      },
+      "description": "Using for interstial ads gep for load and show",
+      "valueType": "STRING"
+    },
+    "google_admob_interstitial": {
+      "defaultValue": {
+        "value": " ca-app-pub-3940256099942544/8691691433"
+      },
+      "description": "Demo Id;-  \tca-app-pub-3940256099942544/8691691433",
+      "valueType": "STRING"
+    },
+    "ads_click_counter": {
+      "defaultValue": {
+        "value": "1"
+      },
+      "description": " Ads Interstial ads Click Counter",
+      "valueType": "NUMBER"
+    },
+    "click_time_ads_type_name": {
+      "defaultValue": {
+        "value": "Interstitial"
+      },
+      "description": "You Can Choose Interstitial,Appopen",
+      "valueType": "STRING"
+    },
+    "google_admob_app_open": {
+      "defaultValue": {
+        "value": " ca-app-pub-3940256099942544/3419835294"
+      },
+      "description": "Demo Id:-  \tca-app-pub-3940256099942544/3419835294",
+      "valueType": "STRING"
+    },
+    "facebook_native": {
+      "defaultValue": {
+        "value": "YOUR_PLACEMENT_ID"
+      },
+      "description": "Demo id:-YOUR_PLACEMENT_ID",
+      "valueType": "STRING"
+    },
+    "skip_ads_activity_array": {
+      "defaultValue": {
+        "value": "\"\",\"\""
+      },
+      "description": "use for skip ads actity when we match with this array",
+      "valueType": "STRING"
+    },
+    "is_native_change_banner": {
+      "defaultValue": {
+        "value": "false"
+      },
+      "description": "Native To Banner",
+      "valueType": "BOOLEAN"
+    },
+    "is_showing_app_open": {
+      "defaultValue": {
+        "value": "true"
+      },
+      "description": "turn on or off all appopen google if true then show avd if false then not show",
+      "valueType": "BOOLEAN"
+    },
+    "facebook_interstitial": {
+      "defaultValue": {
+        "value": "IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID"
+      },
+      "description": "Demo Id:- IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID",
+      "valueType": "STRING"
+    },
+    "is_back_press_inter_show": {
+      "defaultValue": {
+        "value": "true"
+      },
+      "description": "if flag is true then showing inter in backpPress and if false then skip avd in backpress",
+      "valueType": "BOOLEAN"
+    },
+    "google_admob_banner": {
+      "defaultValue": {
+        "value": " ca-app-pub-3940256099942544/6300978111"
+      },
+      "description": "Demo Id:-  \tca-app-pub-3940256099942544/6300978111",
+      "valueType": "STRING"
+    },
+    "facebook_banner": {
+      "defaultValue": {
+        "value": "IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID"
+      },
+      "description": "Demo Id:-IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID",
+      "valueType": "STRING"
+    },
+    "google_admob_native": {
+      "defaultValue": {
+        "value": "ca-app-pub-3940256099942544/1044960115"
+      },
+      "description": "Demo Id:- ca-app-pub-3940256099942544/1044960115",
+      "valueType": "STRING"
+    },
+    "app_is_live_mode": {
+      "defaultValue": {
+        "value": "false"
+      },
+      "description": "if app is live mode then app showing live id's and if not then showing test avd",
+      "valueType": "BOOLEAN"
+    },
+    "is_banner_change_native": {
+      "defaultValue": {
+        "value": "false"
+      },
+      "description": "Banner To Native",
+      "valueType": "BOOLEAN"
+    },
+    "is_ads_showing_or_not": {
+      "defaultValue": {
+        "value": "true"
+      },
+      "description": " //if flag true then avs show if not then avd not showing if any test or live",
+      "valueType": "BOOLEAN"
+    },
+    "banner_all_ads_on_off": {
+      "defaultValue": {
+        "value": "true"
+      },
+      "description": "turn on or off all banner avd quereka,facebook,google all of them if true then show avd if false then not show",
+      "valueType": "BOOLEAN"
+    },
+    "native_all_ads_on_off": {
+      "defaultValue": {
+        "value": "true"
+      },
+      "description": "turn on or off all native avd quereka,facebook,google all of them if true then show avd if false then not show",
+      "valueType": "BOOLEAN"
+    },
+    "ads_sequence": {
+      "defaultValue": {
+        "value": "1"
+      },
+      "description": "   SHOW_ADMOB = 1      SHOW_FB = 2      ADMOB_FAIL_SHOW_FB = 3      FB_FAIL_SHOW_ADMOB = 4",
+      "valueType": "NUMBER"
+    },
+    "interstitial_all_ads_on_off": {
+      "defaultValue": {
+        "value": "true"
+      },
+      "description": "turn on or off all inters avd quereka,facebook,google all of them if true then show avd if false then not show",
+      "valueType": "BOOLEAN"
+    }
+  },
+  "version": {
+    "versionNumber": "4",
+    "updateTime": "2023-08-22T10:56:04.055106Z",
+    "updateUser": {
+      "email": "vasani.chirag48@gmail.com"
+    },
+    "updateOrigin": "CONSOLE",
+    "updateType": "INCREMENTAL_UPDATE"
+  }
+}
