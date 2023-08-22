@@ -54,6 +54,7 @@ This library module simplifies the integration of Google and Facebook's latest a
 ## Getting Started
 
 - [Installation Guide](#) (Add installation instructions here)
+https://github.com/ChiragVasaniP/AdsModuleDemo/blob/master/Guide.md
 - [Usage Documentation](#) (Link to detailed usage instructions)
 -  (Provide code examples or links to sample projects)
 
