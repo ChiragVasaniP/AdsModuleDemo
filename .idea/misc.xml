@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/A Chirag/JenilAdsSetupFull/JeniAds/src/main/res/layout/activity_intro.xml" value="0.18055555555555555" />
+        <entry key="..\:/A Chirag/JenilAdsSetupFull/JeniAds/src/main/res/layout/ad_facebook_native.xml" value="0.18489583333333334" />
+        <entry key="..\:/A Chirag/JenilAdsSetupFull/JeniAds/src/main/res/layout/ad_unified.xml" value="0.18489583333333334" />
+        <entry key="..\:/A Chirag/JenilAdsSetupFull/JeniAds/src/main/res/layout/banner_qureka.xml" value="0.18489583333333334" />
+        <entry key="..\:/A Chirag/JenilAdsSetupFull/JeniAds/src/main/res/layout/dialog_custome.xml" value="0.18489583333333334" />
+        <entry key="..\:/A Chirag/JenilAdsSetupFull/JeniAds/src/main/res/layout/dialog_update.xml" value="0.18489583333333334" />
+        <entry key="..\:/A Chirag/JenilAdsSetupFull/JeniAds/src/main/res/layout/fan_native_ad_layout.xml" value="0.18489583333333334" />
+        <entry key="..\:/A Chirag/JenilAdsSetupFull/JeniAds/src/main/res/layout/item_intro_screen_image.xml" value="0.18489583333333334" />
+        <entry key="..\:/A Chirag/JenilAdsSetupFull/JeniAds/src/main/res/layout/native_qureka.xml" value="0.18489583333333334" />
+        <entry key="..\:/A Chirag/JenilAdsSetupFull/JeniAds/src/main/res/layout/small_native_layouts.xml" value="0.18489583333333334" />
+        <entry key="..\:/A Chirag/JenilAdsSetupFull/JeniAds/src/main/res/layout/view_pager_fragment1.xml" value="0.18489583333333334" />
+        <entry key="..\:/A Chirag/JenilAdsSetupFull/app/src/main/res/layout/activity_main.xml" value="0.18489583333333334" />
+        <entry key="..\:/A Chirag/JenilAdsSetupFull/app/src/main/res/layout/activity_second.xml" value="0.18489583333333334" />
+        <entry key="..\:/A Chirag/JenilAdsSetupFull/app/src/main/res/layout/activity_splash.xml" value="0.18055555555555555" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

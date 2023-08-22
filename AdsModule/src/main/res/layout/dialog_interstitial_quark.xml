@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00555555"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/corner_shape"
+        android:backgroundTint="@color/white"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_close_int"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/corner_shape"
+            android:backgroundTint="@color/black"
+            android:tintMode="src_in"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/qureka_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_game_image" />
+
+        <Button
+            android:id="@+id/btn_play_inter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/corner_shape"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:text="Play now"
+            android:textColor="@color/white"
+            android:textSize="10.40dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

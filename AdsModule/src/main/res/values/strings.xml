@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="str_loading">Loading.....</string>
+    <string name="str_cancel">Cancel</string>
+    <string name="str_watch">Watch</string>
+    <string name="str_premium_effect">Premium Effect</string>
+    <string name="str_please_watch_full_video_ad_to_use_this_effect">Please watch full video Ad to use this Effect</string>
+    <string name="str_reward_failed">Reward Not get Successfully</string>
+
+    <!--    GoogleAdmob-->
+    <string name="str_app_open_admob_google" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="str_banner_admob_google" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="str_interstitial_admob_google" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="str_native_admob_google" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="str_reward_admob_google" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+
+
+    <string name="str_fb_rectangle_facebook" translatable="false">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
+    <string name="str_fb_native_facebook" translatable="false">YOUR_PLACEMENT_ID</string>
+    <string name="str_fb_banner_50_facebook" translatable="false">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
+    <!--    using as 90 Banner ads-->
+    <string name="str_banner_90_facebook" translatable="false">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
+    <string name="str_interstitial_facebook" translatable="false">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
+    <string name="str_reward_facebook" translatable="false">YOUR_PLACEMENT_ID</string>
+    <string name="update">Update</string>
+    <string name="later">Later</string>
+    <string name="did_you_like_the_app">Did you like the %s?</string>
+    <string name="let_us_know_what_you_think">Let us know what you think</string>
+    <string name="picasy_update">%s recommends that you update to the latest version. You can keep using this app while downloading the update.</string>
+    <string name="submit">Submit</string>
+    <string name="str_the_chrome_application_is_not_installed_on_your_phone_please_download_from_the_play_store">The Chrome application is not installed on your phone. Please download from the Play Store.</string>
+    <string name="str_next">Next</string>
+    <string name="str_install_now">Install now</string>
+    <string name="str_previous">Previous</string>
+    <string name="finish">Finish</string>
+</resources>
