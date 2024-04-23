@@ -6,7 +6,7 @@
 
 Description: Implement basic functionality for displaying ads.
 
-### Milestone 2: Aug 22, 2024
+### Milestone 2: Aug 22, 2023
 
 Description: Integrate user targeting and analytics features, Push code to the github.
            1. **Google AdMob Integration:** Integrate the Google AdMob SDK to display banner ads within the app.
