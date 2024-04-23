@@ -7,8 +7,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.demo.fullsetup.aPackage.AdsShowingClass;
-import com.demo.fullsetup.aPackage.utils.OnOneOffClickListener;
+import com.qa.adsshared.adsPackage.AdsShowingClass;
+import com.qa.adsshared.adsPackage.utils.OnOneOffClickListener;
 import com.demo.example.R;
 
 public class MainActivity extends AppCompatActivity {

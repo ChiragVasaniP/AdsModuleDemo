@@ -2,7 +2,10 @@
 <network-security-config xmlns:tools="http://schemas.android.com/tools"
     tools:ignore="MissingDefaultResource">
     <!--Set application-wide security config using base-config tag.-->
-    <base-config cleartextTrafficPermitted="true" />
 
-
+    <base-config cleartextTrafficPermitted="true">
+    <trust-anchors>
+        <certificates src="system"/>
+    </trust-anchors>
+</base-config>
 </network-security-config>

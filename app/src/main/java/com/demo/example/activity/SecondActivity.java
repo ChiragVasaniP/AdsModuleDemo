@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.demo.fullsetup.aPackage.AdsShowingClass;
+import com.qa.adsshared.adsPackage.AdsShowingClass;
 import com.demo.example.R;
 
 public class SecondActivity extends AppCompatActivity {

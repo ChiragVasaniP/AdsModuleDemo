@@ -20,9 +20,10 @@ import androidx.multidex.MultiDex;
 import androidx.multidex.MultiDexApplication;
 
 import com.google.firebase.FirebaseApp;
-import com.demo.fullsetup.FirebaseConfigConst;
-import com.demo.fullsetup.aPackage.gopo.AppOpenAdManager;
-import com.demo.fullsetup.aPackage.utils.AdsSharedPref;
+import com.qa.adsshared.FirebaseConfigConst;
+import com.qa.adsshared.adsPackage.AdsShowingClass;
+import com.qa.adsshared.adsPackage.googi.AppOpenAdManager;
+import com.qa.adsshared.adsPackage.utils.AdsSharedPref;
 import com.demo.example.activity.SplashActivity;
 
 
@@ -64,7 +65,7 @@ public class MyApp extends MultiDexApplication implements Application.ActivityLi
     public void onCreate() {
         super.onCreate();
         MultiDex.install(this);
-
+        AdsShowingClass.initLiseAdsSdk(this);
         new AdsSharedPref(this);
         registerActivityLifecycleCallbacks(this);
         ProcessLifecycleOwner.get().getLifecycle().addObserver(this);
@@ -107,7 +108,7 @@ public class MyApp extends MultiDexApplication implements Application.ActivityLi
     protected void onMoveToForeground() {
         // Show the ad (if available) when the app moves to foreground.
         Log.e(TAG, "onMoveToForeground: " + currentActivity.getLocalClassName());
-        if (AdsSharedPref.getInstance(currentActivity).getABoolean(FirebaseConfigConst.IS_ADS_SHOWING_OR_NOT)
+        if (AdsSharedPref.getInstance(currentActivity).getABoolean(FirebaseConfigConst.IS_ADD_SHOW)
                 && AdsSharedPref.getInstance(currentActivity).getABoolean(FirebaseConfigConst.IS_SHOWING_APP_OPEN)
                 && !(currentActivity instanceof SplashActivity)
 

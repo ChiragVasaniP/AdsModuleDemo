@@ -1,38 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white">
+    android:layout_height="match_parent">
 
-    <FrameLayout
-
-        android:id="@+id/frame_native_big"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:background="@drawable/corner_shape_viewpgager" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/layoutDots"
-        android:layout_below="@+id/frame_native_big"
-        android:layout_margin="3dp" />
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp" />
 
 
     <LinearLayout
         android:id="@+id/layoutDots"
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:layout_above="@+id/rl_buttons"
+        android:layout_above="@+id/btn_view_pager"
         android:gravity="center"
         android:orientation="horizontal" />
 
+
     <RelativeLayout
-        android:id="@+id/rl_buttons"
+        android:id="@+id/btn_view_pager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:layout_above="@id/frame_native_small"
+        android:layout_marginHorizontal="5dp"
         android:layout_marginBottom="5dp">
 
         <TextView
@@ -43,7 +45,7 @@
             android:background="@drawable/corner_shape"
             android:backgroundTint="@color/black"
             android:paddingHorizontal="20dp"
-            android:paddingVertical="7dp"
+            android:paddingVertical="10dp"
             android:text="@string/str_previous"
             android:textColor="@color/white"
             android:textSize="19sp"
@@ -57,7 +59,7 @@
             android:background="@drawable/corner_shape"
             android:backgroundTint="@color/black"
             android:paddingHorizontal="20dp"
-            android:paddingVertical="7dp"
+            android:paddingVertical="10dp"
             android:text="@string/str_next"
             android:textColor="@color/white"
             android:textSize="19sp"
@@ -66,4 +68,9 @@
     </RelativeLayout>
 
 
+    <FrameLayout
+        android:id="@+id/frame_native_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
 </RelativeLayout>
