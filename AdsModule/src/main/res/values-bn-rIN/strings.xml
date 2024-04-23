@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="str_loading">লোড হচ্ছে.....</string>
+    <string name="str_cancel">বাতিল করুন</string>
+    <string name="str_watch">ঘড়ি</string>
+    <string name="str_premium_effect">প্রিমিয়াম প্রভাব</string>
+    <string name="str_please_watch_full_video_ad_to_use_this_effect">এই প্রভাব ব্যবহার করতে সম্পূর্ণ ভিডিও বিজ্ঞাপন দেখুন</string>
+
+
+    <string name="update" >হালনাগাদ</string>
+    <string name="later" >পরে</string>
+    <string name="did_you_like_the_app">আপনি কি %s পছন্দ করেছেন?</string>
+    <string name="let_us_know_what_you_think" >আপনি কি ভাবছেন আমাদের জানান</string>
+    <string name="picasy_update" >%s আপনাকে সর্বশেষ সংস্করণে আপডেট করার পরামর্শ দেয়। আপডেট ডাউনলোড করার সময় আপনি এই অ্যাপটি ব্যবহার চালিয়ে যেতে পারেন।</string>
+    <string name="submit" >জমা দিন</string>
+    <string name="download_now" >এখনই ডাউনলোড করুন</string>
+    <string name="str_previous">আগে</string>
+    <string name="str_the_chrome_application_is_not_installed_on_your_phone_please_download_from_the_play_store">Chrome অ্যাপ্লিকেশনটি আপনার ফোনে ইনস্টল করা নেই৷ দয়া করে প্লে স্টোর থেকে ডাউনলোড করুন।</string>
+
+    <string name="str_next">পরবর্তী</string>
+
+</resources>
+

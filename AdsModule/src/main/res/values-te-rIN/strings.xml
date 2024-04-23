@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="str_loading">లోడ్.....</string>
+    <string name="str_cancel">రద్దు చేయండి</string>
+    <string name="str_watch">చూడండి</string>
+    <string name="str_premium_effect">ప్రీమియం ప్రభావం</string>
+    <string name="str_please_watch_full_video_ad_to_use_this_effect">ఈ ఎఫెక్ట్‌ని ఉపయోగించడానికి దయచేసి పూర్తి వీడియో ప్రకటనను చూడండి</string>
+
+    <string name="update" >నవీకరించు</string>
+    <string name="later" >తరువాత</string>
+    <string name="did_you_like_the_app">మీకు %s నచ్చిందా?</string>
+    <string name="let_us_know_what_you_think" >మీరు ఏమనుకుంటున్నారో మాకు తెలియజేయండి</string>
+    <string name="picasy_update" >మీరు తాజా సంస్కరణకు నవీకరించవలసిందిగా %s సిఫార్సు చేస్తున్నారు. అప్‌డేట్‌ని డౌన్‌లోడ్ చేస్తున్నప్పుడు మీరు ఈ యాప్‌ని ఉపయోగించడం కొనసాగించవచ్చు.</string>
+    <string name="submit" >సమర్పించండి</string>
+    <string name="download_now" >ఇపుడు డౌన్లోడ్ చేసుకోండి</string>
+    <string name="str_previous">మునుపటి</string>
+    <string name="str_the_chrome_application_is_not_installed_on_your_phone_please_download_from_the_play_store">Chrome అప్లికేషన్ మీ ఫోన్‌లో ఇన్‌స్టాల్ చేయబడలేదు. దయచేసి Play Store నుండి డౌన్‌లోడ్ చేసుకోండి.</string>
+
+    <string name="str_next">తరువాత</string>
+
+</resources>
+

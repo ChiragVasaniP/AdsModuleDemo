@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="str_loading">ಲೋಡ್ ಆಗುತ್ತಿದೆ.....</string>
+    <string name="str_cancel">ರದ್ದುಮಾಡು</string>
+    <string name="str_watch">ವೀಕ್ಷಿಸಿ</string>
+    <string name="str_premium_effect">ಪ್ರೀಮಿಯಂ ಎಫೆಕ್ಟ್</string>
+    <string name="str_please_watch_full_video_ad_to_use_this_effect">ಈ ಪರಿಣಾಮವನ್ನು ಬಳಸಲು ದಯವಿಟ್ಟು ಸಂಪೂರ್ಣ ವೀಡಿಯೊ ಜಾಹೀರಾತನ್ನು ವೀಕ್ಷಿಸಿ</string>
+
+    <string name="update" >ನವೀಕರಿಸಿ</string>
+    <string name="later" >ನಂತರ</string>
+    <string name="did_you_like_the_app">ನೀವು %s ಅನ್ನು ಇಷ್ಟಪಟ್ಟಿದ್ದೀರಾ?</string>
+    <string name="let_us_know_what_you_think" >ನಿಮ್ಮ ಅನಿಸಿಕೆಯನ್ನು ನಮಗೆ ತಿಳಿಸಿ</string>
+    <string name="picasy_update" >ನೀವು ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಗೆ ನವೀಕರಿಸಲು %s ಶಿಫಾರಸು ಮಾಡುತ್ತಾರೆ. ನವೀಕರಣವನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡುವಾಗ ನೀವು ಈ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಬಳಸುವುದನ್ನು ಮುಂದುವರಿಸಬಹುದು.</string>
+    <string name="submit" >ಸಲ್ಲಿಸು</string>
+    <string name="download_now" >ಈಗ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ</string>
+    <string name="str_previous">ಹಿಂದಿನ</string>
+    <string name="str_the_chrome_application_is_not_installed_on_your_phone_please_download_from_the_play_store">ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ Chrome ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಸ್ಥಾಪಿಸಲಾಗಿಲ್ಲ. ದಯವಿಟ್ಟು ಪ್ಲೇ ಸ್ಟೋರ್‌ನಿಂದ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ.</string>
+
+    <string name="str_next">ಮುಂದೆ</string>
+
+</resources>
+

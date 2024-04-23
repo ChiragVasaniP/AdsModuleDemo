@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="str_loading">ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ.....</string>
+    <string name="str_cancel">ਰੱਦ ਕਰੋ</string>
+    <string name="str_watch">ਦੇਖੋ</string>
+    <string name="str_premium_effect">ਪ੍ਰੀਮੀਅਮ ਪ੍ਰਭਾਵ</string>
+    <string name="str_please_watch_full_video_ad_to_use_this_effect">ਕਿਰਪਾ ਕਰਕੇ ਇਸ ਪ੍ਰਭਾਵ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ ਪੂਰੀ ਵੀਡੀਓ ਵਿਗਿਆਪਨ ਦੇਖੋ</string>
+
+    <string name="update" >ਅੱਪਡੇਟ ਕਰੋ</string>
+    <string name="later" >ਬਾਅਦ ਵਿੱਚ</string>
+    <string name="did_you_like_the_app">ਕੀ ਤੁਹਾਨੂੰ %s ਪਸੰਦ ਆਇਆ?</string>
+    <string name="let_us_know_what_you_think" >ਸਾਨੂੰ ਦੱਸੋ ਕਿ ਤੁਸੀਂ ਕੀ ਸੋਚਦੇ ਹੋ</string>
+    <string name="picasy_update" >%s ਸਿਫ਼ਾਰਸ਼ ਕਰਦਾ ਹੈ ਕਿ ਤੁਸੀਂ ਨਵੀਨਤਮ ਸੰਸਕਰਣ \'ਤੇ ਅੱਪਡੇਟ ਕਰੋ। ਤੁਸੀਂ ਅਪਡੇਟ ਨੂੰ ਡਾਊਨਲੋਡ ਕਰਦੇ ਸਮੇਂ ਇਸ ਐਪ ਦੀ ਵਰਤੋਂ ਜਾਰੀ ਰੱਖ ਸਕਦੇ ਹੋ।</string>
+    <string name="submit" >ਜਮ੍ਹਾਂ ਕਰੋ</string>
+    <string name="download_now" >ਹੁਣੇ ਡਾਊਨਲੋਡ ਕਰੋ</string>
+    <string name="str_previous">ਪਿਛਲਾ</string>
+    <string name="str_the_chrome_application_is_not_installed_on_your_phone_please_download_from_the_play_store">Chrome ਐਪਲੀਕੇਸ਼ਨ ਤੁਹਾਡੇ ਫ਼ੋਨ \'ਤੇ ਸਥਾਪਤ ਨਹੀਂ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਪਲੇ ਸਟੋਰ ਤੋਂ ਡਾਊਨਲੋਡ ਕਰੋ।</string>
+
+    <string name="str_next">ਅਗਲਾ</string>
+
+</resources>
+

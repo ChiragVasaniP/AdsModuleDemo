@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/rl_height"
+    android:background="@drawable/border_shape"
+    android:layout_margin="1dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/qureka_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_game_image" />
+
+    <Button
+        android:id="@+id/btn_qureka_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/corner_shape"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:paddingHorizontal="8dp"
+        android:text="Play now"
+        android:textColor="@color/white"
+        android:textSize="10.40dp"
+        android:textStyle="bold" />
+</RelativeLayout>

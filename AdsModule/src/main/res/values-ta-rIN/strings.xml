@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="str_loading">ஏற்றுகிறது.....</string>
+    <string name="str_cancel">ரத்து செய்</string>
+    <string name="str_watch">பார்க்கவும்</string>
+    <string name="str_premium_effect">பிரீமியம் விளைவு</string>
+    <string name="str_please_watch_full_video_ad_to_use_this_effect">இந்த விளைவைப் பயன்படுத்த முழு வீடியோ விளம்பரத்தைப் பார்க்கவும்</string>
+
+    <string name="update" >புதுப்பிக்கவும்</string>
+    <string name="later" >பின்னர்</string>
+    <string name="did_you_like_the_app">நீங்கள் %s ஐ விரும்பினீர்களா?</string>
+    <string name="let_us_know_what_you_think" >நீங்கள் என்ன நினைக்கிறீர்கள் என்பதை எங்களுக்குத் தெரியப்படுத்துங்கள்</string>
+    <string name="picasy_update" >சமீபத்திய பதிப்பிற்கு புதுப்பிக்குமாறு %s பரிந்துரைக்கிறது. புதுப்பிப்பைப் பதிவிறக்கும் போது இந்த பயன்பாட்டை நீங்கள் தொடர்ந்து பயன்படுத்தலாம்.</string>
+    <string name="submit" >சமர்ப்பிக்கவும்</string>
+    <string name="download_now" >இப்போது பதிவிறக்கவும்</string>
+    <string name="str_previous">முந்தைய</string>
+    <string name="str_the_chrome_application_is_not_installed_on_your_phone_please_download_from_the_play_store">உங்கள் மொபைலில் Chrome பயன்பாடு நிறுவப்படவில்லை. Play Store இலிருந்து பதிவிறக்கவும்.</string>
+
+    <string name="str_next">அடுத்தது</string>
+
+</resources>
+

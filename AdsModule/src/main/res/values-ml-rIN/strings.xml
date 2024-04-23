@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="str_loading">ലോഡിംഗ്.....</string>
+    <string name="str_cancel">റദ്ദാക്കുക</string>
+    <string name="str_watch">കാവൽ</string>
+    <string name="str_premium_effect">പ്രീമിയം ഇഫക്റ്റ്</string>
+    <string name="str_please_watch_full_video_ad_to_use_this_effect">ഈ ഇഫക്റ്റ് ഉപയോഗിക്കുന്നതിന് ദയവായി മുഴുവൻ വീഡിയോ പരസ്യവും കാണുക</string>
+
+
+    <string name="update" >അപ്ഡേറ്റ് ചെയ്യുക</string>
+    <string name="later" >പിന്നീട്</string>
+    <string name="did_you_like_the_app">നിങ്ങൾക്ക് %s ഇഷ്ടപ്പെട്ടോ?</string>
+    <string name="let_us_know_what_you_think" >നിങ്ങൾ എന്താണ് ചിന്തിക്കുന്നതെന്ന് ഞങ്ങളെ അറിയിക്കുക</string>
+    <string name="picasy_update" >ഏറ്റവും പുതിയ പതിപ്പിലേക്ക് അപ്ഡേറ്റ് ചെയ്യാൻ %s ശുപാർശ ചെയ്യുന്നു. അപ്‌ഡേറ്റ് ഡൗൺലോഡ് ചെയ്യുമ്പോൾ നിങ്ങൾക്ക് ഈ ആപ്പ് ഉപയോഗിക്കുന്നത് തുടരാം.</string>
+    <string name="submit" >സമർപ്പിക്കുക</string>
+    <string name="download_now" >ഇപ്പോൾ ഡൗൺലോഡ് ചെയ്യുക</string>
+    <string name="str_previous">മുമ്പത്തെ</string>
+    <string name="str_the_chrome_application_is_not_installed_on_your_phone_please_download_from_the_play_store">നിങ്ങളുടെ ഫോണിൽ Chrome ആപ്ലിക്കേഷൻ ഇൻസ്റ്റാൾ ചെയ്തിട്ടില്ല. പ്ലേ സ്റ്റോറിൽ നിന്ന് ഡൗൺലോഡ് ചെയ്യുക.</string>
+
+    <string name="str_next">അടുത്തത്</string>
+
+</resources>
+

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/corner_shape"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:backgroundTint="@color/white"
+    android:paddingRight="10dp"
+    android:paddingBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/emoji"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/emoji_3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/did_you_like_the_app"
+            android:textColor="@color/black"
+            android:textSize="15.60dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/let_us_know_what_you_think"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:numStars="5"
+            android:progressBackgroundTint="@color/gray_text"
+            android:progressTint="@color/kelly_3"
+            android:rating="3"
+            android:secondaryProgressTint="@color/kelly_3"
+            android:stepSize="1" />
+
+        <EditText
+            android:id="@+id/ratingEt"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/corner_shape"
+            android:backgroundTint="#abe4e4e4"
+            android:gravity="start"
+            android:hint="Leave comment..."
+            android:inputType="textMultiLine"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_text"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/rateCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/str_cancel"
+                android:textColor="@color/black"
+                android:textSize="15.60dp" />
+
+            <TextView
+                android:id="@+id/rateSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/submit"
+                android:background="@drawable/corner_shape"
+                android:paddingVertical="10dp"
+                android:backgroundTint="@color/kelly_3"
+                android:paddingHorizontal="25dp"
+                android:textColor="@color/BackgroundCardColor"
+                android:textSize="15.60dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
