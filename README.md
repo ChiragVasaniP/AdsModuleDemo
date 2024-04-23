@@ -1,5 +1,25 @@
 # Ad Library Module
 
+## Milestones
+
+### Milestone 1: january, 2023
+
+Description: Implement basic functionality for displaying ads.
+
+### Milestone 2: Aug 22, 2024
+
+Description: Integrate user targeting and analytics features, Push code to the github.
+           1. **Google AdMob Integration:** Integrate the Google AdMob SDK to display banner ads within the app.
+           2. **Facebook Audience Network Integration:** Implement integration with the Facebook Audience Network for displaying native ads.
+           3. **Ad Placement Management:** Design a system for managing ad placements within the app, including targeting specific screens or user segments.
+           4. **Ad Rendering Components:** Develop UI components and classes for rendering ads in various formats, including banners, interstitials, and rewarded videos.
+           5. Finalize UI/UX enhancements and performance optimizations.
+
+
+## To Be Continued
+
+This project is ongoing, and more updates and milestones will be added in the future.
+
 **A versatile ad management library for mobile applications**
 
 ## Overview
