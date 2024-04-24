@@ -11,25 +11,6 @@ public class FirebaseConfigConst {
     public static final String REWARD_COINS = "reward_coins";
 
 
-    public static final String API_GETSETTINGS = "api_getsettings";
-    public static final String API_REGISTERUSER = "api_registeruser";
-    public static final String API_LOGOUTUSER = "api_logoutuser";
-    public static final String API_GETUSERDETAIL = "api_getuserdetail";
-    public static final String API_GETCOUNTRYLIST = "api_getcountrylist";
-    public static final String API_GETGIRLSLIST = "api_getgirlslist";
-    public static final String API_GETCOMMENTS = "api_getcomments";
-    public static final String API_GETGIFTCATEGORY = "api_getgiftcategory";
-    public static final String API_GETGIFTS = "api_getgifts";
-    public static final String API_GETRANDOMVIDEO = "api_getrandomvideo";
-    public static final String API_GETBRANDINGIMAGES = "api_getbrandingimages";
-    public static final String API_GETCOINPACKAGES = "api_getcoinpackages";
-    public static final String API_GETOFFERCOINSPAKAGES = "api_getoffercoinspakages";
-    public static final String API_ADDCOIN = "api_addcoin";
-    public static final String API_LESSCOIN = "api_lesscoin";
-    public static final String API_GETMESSAGEUSERLIST = "api_getmessageuserlist";
-    public static final String API_GETMESSAGELIST = "api_getmessagelist";
-
-
     public static final String IS_SHOW_INTERNET_DIALOG = "is_show_internet_dialog";
 
     public static String GOOGLE_ADMOB_BANNER = "google_admob_banner";

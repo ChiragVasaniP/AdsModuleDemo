@@ -70,24 +70,6 @@ public class SplashActivity extends AppCompatActivity {
         AdsSharedPref.getInstance(SplashActivity.this).setString(FirebaseConfigConst.REWARD_COINS, mFirebaseRemoteConfig.getString(FirebaseConfigConst.REWARD_COINS));
 
         //App Api Path
-        AdsSharedPref.getInstance(SplashActivity.this).setString(FirebaseConfigConst.API_GETSETTINGS, mFirebaseRemoteConfig.getString(FirebaseConfigConst.API_GETSETTINGS));
-        AdsSharedPref.getInstance(SplashActivity.this).setString(FirebaseConfigConst.API_REGISTERUSER, mFirebaseRemoteConfig.getString(FirebaseConfigConst.API_REGISTERUSER));
-        AdsSharedPref.getInstance(SplashActivity.this).setString(FirebaseConfigConst.API_LOGOUTUSER, mFirebaseRemoteConfig.getString(FirebaseConfigConst.API_LOGOUTUSER));
-        AdsSharedPref.getInstance(SplashActivity.this).setString(FirebaseConfigConst.API_GETUSERDETAIL, mFirebaseRemoteConfig.getString(FirebaseConfigConst.API_GETUSERDETAIL));
-        AdsSharedPref.getInstance(SplashActivity.this).setString(FirebaseConfigConst.API_GETCOUNTRYLIST, mFirebaseRemoteConfig.getString(FirebaseConfigConst.API_GETCOUNTRYLIST));
-        AdsSharedPref.getInstance(SplashActivity.this).setString(FirebaseConfigConst.API_GETGIRLSLIST, mFirebaseRemoteConfig.getString(FirebaseConfigConst.API_GETGIRLSLIST));
-        AdsSharedPref.getInstance(SplashActivity.this).setString(FirebaseConfigConst.API_GETCOMMENTS, mFirebaseRemoteConfig.getString(FirebaseConfigConst.API_GETCOMMENTS));
-        AdsSharedPref.getInstance(SplashActivity.this).setString(FirebaseConfigConst.API_GETGIFTCATEGORY, mFirebaseRemoteConfig.getString(FirebaseConfigConst.API_GETGIFTCATEGORY));
-        AdsSharedPref.getInstance(SplashActivity.this).setString(FirebaseConfigConst.API_GETGIFTS, mFirebaseRemoteConfig.getString(FirebaseConfigConst.API_GETGIFTS));
-        AdsSharedPref.getInstance(SplashActivity.this).setString(FirebaseConfigConst.API_GETRANDOMVIDEO, mFirebaseRemoteConfig.getString(FirebaseConfigConst.API_GETRANDOMVIDEO));
-        AdsSharedPref.getInstance(SplashActivity.this).setString(FirebaseConfigConst.API_GETBRANDINGIMAGES, mFirebaseRemoteConfig.getString(FirebaseConfigConst.API_GETBRANDINGIMAGES));
-        AdsSharedPref.getInstance(SplashActivity.this).setString(FirebaseConfigConst.API_GETCOINPACKAGES, mFirebaseRemoteConfig.getString(FirebaseConfigConst.API_GETCOINPACKAGES));
-        AdsSharedPref.getInstance(SplashActivity.this).setString(FirebaseConfigConst.API_GETOFFERCOINSPAKAGES, mFirebaseRemoteConfig.getString(FirebaseConfigConst.API_GETOFFERCOINSPAKAGES));
-        AdsSharedPref.getInstance(SplashActivity.this).setString(FirebaseConfigConst.API_ADDCOIN, mFirebaseRemoteConfig.getString(FirebaseConfigConst.API_ADDCOIN));
-        AdsSharedPref.getInstance(SplashActivity.this).setString(FirebaseConfigConst.API_LESSCOIN, mFirebaseRemoteConfig.getString(FirebaseConfigConst.API_LESSCOIN));
-        AdsSharedPref.getInstance(SplashActivity.this).setString(FirebaseConfigConst.API_GETMESSAGEUSERLIST, mFirebaseRemoteConfig.getString(FirebaseConfigConst.API_GETMESSAGEUSERLIST));
-        AdsSharedPref.getInstance(SplashActivity.this).setString(FirebaseConfigConst.API_GETMESSAGELIST, mFirebaseRemoteConfig.getString(FirebaseConfigConst.API_GETMESSAGELIST));
-
 
 
 
