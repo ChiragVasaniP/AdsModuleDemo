@@ -122,7 +122,7 @@ public class SplashActivity extends AppCompatActivity {
 //        AdsSharedPref.getInstance(SplashActivity.this).setInteger(FirebaseConfigConst.INTERSTITIAL_ADS_COUNTER, (int) mFirebaseRemoteConfig.getLong(FirebaseConfigConst.INTERSTITIAL_ADS_COUNTER));
 
         //Used for ads Sequance Here
-        AdsSharedPref.getInstance(SplashActivity.this).setInteger(FirebaseConfigConst.ADS_SEQUENCE, 2/*(int) mFirebaseRemoteConfig.getLong(FirebaseConfigConst.ADS_SEQUENCE)*/);
+        AdsSharedPref.getInstance(SplashActivity.this).setInteger(FirebaseConfigConst.ADS_SEQUENCE, (int) mFirebaseRemoteConfig.getLong(FirebaseConfigConst.ADS_SEQUENCE));
 
         //Click Counter
         AdsSharedPref.getInstance(SplashActivity.this).setInteger(FirebaseConfigConst.AD_CLICK_AND_INTERVAL_COUNTER, (int) mFirebaseRemoteConfig.getLong(FirebaseConfigConst.AD_CLICK_AND_INTERVAL_COUNTER));
@@ -149,6 +149,7 @@ public class SplashActivity extends AppCompatActivity {
         AdsSharedPref.getInstance(SplashActivity.this).setBooleanValue(FirebaseConfigConst.IS_EXIT_DIALOG_INTERSTITIAL_SHOW, mFirebaseRemoteConfig.getBoolean(FirebaseConfigConst.IS_EXIT_DIALOG_INTERSTITIAL_SHOW));
 
         //if data get interstial then showin inter and if getting appopen then showing app open ads
+
         AdsSharedPref.getInstance(SplashActivity.this).setString(FirebaseConfigConst.GET_SPLASH_ADS_TYPE, mFirebaseRemoteConfig.getString(FirebaseConfigConst.GET_SPLASH_ADS_TYPE));
 
 
