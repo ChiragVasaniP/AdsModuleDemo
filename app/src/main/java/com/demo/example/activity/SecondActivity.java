@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.qa.adsshared.adsPackage.AdsShowingClass;
+import com.shared.ads.libs.adsPackage.AdsShowingClass;
 import com.demo.example.R;
 
 public class SecondActivity extends AppCompatActivity {
@@ -14,7 +14,7 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-        AdsShowingClass.showNativeAds(SecondActivity.this,findViewById(R.id.frame_native_small),false);
+        AdsShowingClass.showNativeAds(SecondActivity.this,findViewById(R.id.frame_native_small),true);
         AdsShowingClass.showBannerAds(SecondActivity.this,findViewById(R.id.frame_banner));
     }
 }

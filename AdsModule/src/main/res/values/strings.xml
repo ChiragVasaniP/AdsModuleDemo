@@ -7,12 +7,15 @@
     <string name="str_premium_effect">Premium Effect</string>
     <string name="str_please_watch_full_video_ad_to_use_this_effect">Please watch full video Ad to use this Effect</string>
 
+
+    <!--
+   @url https://admob-plus.github.io/docs/cordova/test-ads-->
     <!--    GoogleAdmob-->
-    <string name="str_app_open_admob_google" translatable="false">ca-app-pub-9090727927378007/5281091692</string>
-    <string name="str_banner_admob_google" translatable="false">ca-app-pub-9090727927378007/6313836291</string>
-    <string name="str_interstitial_admob_google" translatable="false">ca-app-pub-9090727927378007/2374591280</string>
+    <string name="str_app_open_admob_google" translatable="false">ca-app-pub-3940256099942544/9257395921</string>
+    <string name="str_banner_admob_google" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="str_interstitial_admob_google" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
     <string name="str_native_admob_google" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
-    <string name="str_reward_admob_google" translatable="false">""</string>
+    <string name="str_reward_admob_google" translatable="false">ca-app-pub-3940256099942544/5224354917	</string>
 
 
     <!--    Applovin-->
@@ -21,7 +24,7 @@
     <string name="str_native_applovin" translatable="false">3c05bad83500ead6</string>
 
 
-    <string name="str_fb_native_facebook" translatable="false">YOUR_PLACEMENT_ID</string>
+    <string name="str_fb_native_facebook" translatable="false">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
     <!--    using as 90 Banner ads-->
     <string name="str_banner_90_facebook" translatable="false">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
     <string name="str_interstitial_facebook" translatable="false">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>

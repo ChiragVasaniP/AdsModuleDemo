@@ -9,7 +9,7 @@ plugins {
 android {
 
     defaultConfig {
-        applicationId "com.demo.example"
+        applicationId "com.chirag.lib.module.testapp"
         minSdk 26
         compileSdk 34
         versionCode 1

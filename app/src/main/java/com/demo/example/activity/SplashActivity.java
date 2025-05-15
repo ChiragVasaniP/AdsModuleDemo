@@ -7,22 +7,19 @@ import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.demo.example.BuildConfig;
 import com.demo.example.MyApp;
 import com.demo.example.R;
-import com.demo.example.activity.MainActivity;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings;
-import com.qa.adsshared.FirebaseConfigConst;
-import com.qa.adsshared.ShowAds;
-import com.qa.adsshared.adsPackage.AdsShowingClass;
-import com.qa.adsshared.adsPackage.GoogleMobileAdsConsentManager;
-import com.qa.adsshared.adsPackage.googi.AppOpenAdManager;
-import com.qa.adsshared.adsPackage.utils.AdsSharedPref;
-import com.qa.adsshared.adsPackage.utils.InternetChecker;
+import com.shared.ads.libs.FirebaseConfigConst;
+import com.shared.ads.libs.ShowAds;
+import com.shared.ads.libs.adsPackage.AdsShowingClass;
+import com.shared.ads.libs.adsPackage.googi.AppOpenAdManager;
+import com.shared.ads.libs.adsPackage.utils.AdsSharedPref;
+import com.shared.ads.libs.adsPackage.utils.InternetChecker;
 
 
 public class SplashActivity extends AppCompatActivity {
@@ -125,7 +122,7 @@ public class SplashActivity extends AppCompatActivity {
 //        AdsSharedPref.getInstance(SplashActivity.this).setInteger(FirebaseConfigConst.INTERSTITIAL_ADS_COUNTER, (int) mFirebaseRemoteConfig.getLong(FirebaseConfigConst.INTERSTITIAL_ADS_COUNTER));
 
         //Used for ads Sequance Here
-        AdsSharedPref.getInstance(SplashActivity.this).setInteger(FirebaseConfigConst.ADS_SEQUENCE, (int) mFirebaseRemoteConfig.getLong(FirebaseConfigConst.ADS_SEQUENCE));
+        AdsSharedPref.getInstance(SplashActivity.this).setInteger(FirebaseConfigConst.ADS_SEQUENCE, 2/*(int) mFirebaseRemoteConfig.getLong(FirebaseConfigConst.ADS_SEQUENCE)*/);
 
         //Click Counter
         AdsSharedPref.getInstance(SplashActivity.this).setInteger(FirebaseConfigConst.AD_CLICK_AND_INTERVAL_COUNTER, (int) mFirebaseRemoteConfig.getLong(FirebaseConfigConst.AD_CLICK_AND_INTERVAL_COUNTER));

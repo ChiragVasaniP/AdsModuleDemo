@@ -20,10 +20,10 @@ import androidx.multidex.MultiDex;
 import androidx.multidex.MultiDexApplication;
 
 import com.google.firebase.FirebaseApp;
-import com.qa.adsshared.FirebaseConfigConst;
-import com.qa.adsshared.adsPackage.AdsShowingClass;
-import com.qa.adsshared.adsPackage.googi.AppOpenAdManager;
-import com.qa.adsshared.adsPackage.utils.AdsSharedPref;
+import com.shared.ads.libs.FirebaseConfigConst;
+import com.shared.ads.libs.adsPackage.AdsShowingClass;
+import com.shared.ads.libs.adsPackage.googi.AppOpenAdManager;
+import com.shared.ads.libs.adsPackage.utils.AdsSharedPref;
 import com.demo.example.activity.SplashActivity;
 
 
