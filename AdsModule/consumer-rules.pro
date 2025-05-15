@@ -1,0 +1,4 @@
+-keep class androidx.datastore.** { *; }
+-keep class androidx.datastore.** { *; }
+-keep class kotlinx.coroutines.flow.** { *; }
+-dontwarn androidx.datastore.**

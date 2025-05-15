@@ -13,7 +13,6 @@ import com.google.android.gms.ads.FullScreenContentCallback;
 import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.appopen.AppOpenAd;
 import com.qa.adsshared.FirebaseConfigConst;
-import com.qa.adsshared.adsPackage.ConsentSDK;
 import com.qa.adsshared.adsPackage.utils.AdsSharedPref;
 
 import java.util.Date;
@@ -51,7 +50,6 @@ public class AppOpenAdManager {
                 context,
                 AdsSharedPref.getInstance(context).getAppOpenAdsGoogleAdmob(),
                 request,
-                AppOpenAd.APP_OPEN_AD_ORIENTATION_PORTRAIT,
                 new AppOpenAd.AppOpenAdLoadCallback() {
                     
                     @Override
@@ -87,7 +85,6 @@ public class AppOpenAdManager {
                 context,
                 AdsSharedPref.getInstance(context).getAppOpenAdsGoogleAdmob(),
                 request,
-                AppOpenAd.APP_OPEN_AD_ORIENTATION_PORTRAIT,
                 new AppOpenAd.AppOpenAdLoadCallback() {
                     
                     @Override
@@ -115,11 +112,7 @@ public class AppOpenAdManager {
 
 
     private AdRequest getAdRequest() {
-        try {
-            return ConsentSDK.getAdRequest(context);
-        } catch (Exception e) {
-            return new AdRequest.Builder().build();
-        }
+        return new AdRequest.Builder().build();
     }
 
     

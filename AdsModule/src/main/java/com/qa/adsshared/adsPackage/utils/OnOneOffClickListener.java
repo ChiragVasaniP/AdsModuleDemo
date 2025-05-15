@@ -44,7 +44,7 @@ public abstract class OnOneOffClickListener implements View.OnClickListener {
         } else {
             return;
         }
-        if (AdsSharedPref.getInstance(view.getContext()).getInt(FirebaseConfigConst.AD_CLICK_AND_INTERVAL_COUNTER)==AdsShowingClass.InterStillCounter){
+        if (AdsShowingClass.InterStillCounter>=AdsSharedPref.getInstance(view.getContext()).getInt(FirebaseConfigConst.AD_CLICK_AND_INTERVAL_COUNTER)){
             AdsShowingClass.InterStillCounter=1;
             if (AdsSharedPref.getInstance(view.getContext()).getString(FirebaseConfigConst.CLICK_TIME_ADS_TYPE_NAME).equalsIgnoreCase("Appopen")) {
                 Dialog progressDialog = new Dialog(view.getContext());

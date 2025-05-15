@@ -7,6 +7,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.demo.example.BuildConfig;
@@ -18,6 +19,7 @@ import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings;
 import com.qa.adsshared.FirebaseConfigConst;
 import com.qa.adsshared.ShowAds;
 import com.qa.adsshared.adsPackage.AdsShowingClass;
+import com.qa.adsshared.adsPackage.GoogleMobileAdsConsentManager;
 import com.qa.adsshared.adsPackage.googi.AppOpenAdManager;
 import com.qa.adsshared.adsPackage.utils.AdsSharedPref;
 import com.qa.adsshared.adsPackage.utils.InternetChecker;
@@ -50,7 +52,7 @@ public class SplashActivity extends AppCompatActivity {
                             Log.d(TAG, "Config params updated: Failed");
                         }
 
-//                        Log.e("Tag__SharedPref", "onComplete: " + AdsSharedPref.getInstance(LaunchActivity.this).getString(FirebaseConfigConst.VERSION));
+                        Log.e("Tag__SharedPref", "onComplete: " + AdsSharedPref.getInstance(SplashActivity.this).getString(FirebaseConfigConst.GOOGLE_ADMOB_BANNER));
                         fetchConfigData(mFirebaseRemoteConfig);
                     });
         } else {
@@ -61,7 +63,7 @@ public class SplashActivity extends AppCompatActivity {
 
     private void fetchConfigData(FirebaseRemoteConfig mFirebaseRemoteConfig) {
 
-        AdsShowingClass.initLiseAdsSdk(SplashActivity.this);
+//        AdsShowingClass.initLiseAdsSdk(SplashActivity.this);
 
         //Base App Database
         AdsSharedPref.getInstance(SplashActivity.this).setString(FirebaseConfigConst.BASE_URL, mFirebaseRemoteConfig.getString(FirebaseConfigConst.BASE_URL));
@@ -102,8 +104,8 @@ public class SplashActivity extends AppCompatActivity {
         AdsSharedPref.getInstance(SplashActivity.this).setBannerAdsApplovinPrf(mFirebaseRemoteConfig.getString(FirebaseConfigConst.APPLOVIN_BANNER));
         AdsSharedPref.getInstance(SplashActivity.this).setRewardAdsApplovinPrf(mFirebaseRemoteConfig.getString(FirebaseConfigConst.APPLOVIN_REWARD));
         //Preload Counter For Native and interstial
-        AdsSharedPref.getInstance(SplashActivity.this).setInteger(FirebaseConfigConst.INTERSTITIAL_PRELOAD_COUNT, (int) mFirebaseRemoteConfig.getLong(FirebaseConfigConst.INTERSTITIAL_PRELOAD_COUNT));
-        AdsSharedPref.getInstance(SplashActivity.this).setInteger(FirebaseConfigConst.NATIVE_PRELOAD_COUNT, (int) mFirebaseRemoteConfig.getLong(FirebaseConfigConst.NATIVE_PRELOAD_COUNT));
+//        AdsSharedPref.getInstance(SplashActivity.this).setInteger(FirebaseConfigConst.INTERSTITIAL_PRELOAD_COUNT, (int) mFirebaseRemoteConfig.getLong(FirebaseConfigConst.INTERSTITIAL_PRELOAD_COUNT));
+//        AdsSharedPref.getInstance(SplashActivity.this).setInteger(FirebaseConfigConst.NATIVE_PRELOAD_COUNT, (int) mFirebaseRemoteConfig.getLong(FirebaseConfigConst.NATIVE_PRELOAD_COUNT));
 
         AdsSharedPref.getInstance(SplashActivity.this).setBooleanValue(FirebaseConfigConst.IS_APP_OPEN_CHANGE_INTERSTITIAL, mFirebaseRemoteConfig.getBoolean(FirebaseConfigConst.IS_APP_OPEN_CHANGE_INTERSTITIAL));
 
@@ -256,5 +258,6 @@ public class SplashActivity extends AppCompatActivity {
                 finish();
             }
         }, 500);
+
     }
 }

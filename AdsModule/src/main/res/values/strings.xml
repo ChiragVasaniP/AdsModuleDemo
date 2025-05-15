@@ -8,11 +8,11 @@
     <string name="str_please_watch_full_video_ad_to_use_this_effect">Please watch full video Ad to use this Effect</string>
 
     <!--    GoogleAdmob-->
-    <string name="str_app_open_admob_google" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
-    <string name="str_banner_admob_google" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="str_interstitial_admob_google" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="str_app_open_admob_google" translatable="false">ca-app-pub-9090727927378007/5281091692</string>
+    <string name="str_banner_admob_google" translatable="false">ca-app-pub-9090727927378007/6313836291</string>
+    <string name="str_interstitial_admob_google" translatable="false">ca-app-pub-9090727927378007/2374591280</string>
     <string name="str_native_admob_google" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
-    <string name="str_reward_admob_google" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="str_reward_admob_google" translatable="false">""</string>
 
 
     <!--    Applovin-->

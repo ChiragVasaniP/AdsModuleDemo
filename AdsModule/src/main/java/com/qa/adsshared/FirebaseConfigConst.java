@@ -32,8 +32,8 @@ public class FirebaseConfigConst {
     public static String APPLOVIN_NATIVE = "applovin_native";
 
     //Preload Variable
-    public static String INTERSTITIAL_PRELOAD_COUNT = "interstitial_preload_count";
-    public static String NATIVE_PRELOAD_COUNT = "native_preload_count";
+//    public static String INTERSTITIAL_PRELOAD_COUNT = "interstitial_preload_count";
+//    public static String NATIVE_PRELOAD_COUNT = "native_preload_count";
     public static String IS_APP_OPEN_CHANGE_INTERSTITIAL = "is_app_open_change_interstitial";
 
     public static String IS_LIVEMOD = "app_is_live_mode";

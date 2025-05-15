@@ -11,6 +11,7 @@ import android.view.Window;
 import androidx.annotation.NonNull;
 
 import com.google.android.gms.ads.AdError;
+import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.FullScreenContentCallback;
 import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.OnUserEarnedRewardListener;
@@ -36,7 +37,7 @@ public class RewardAds {
         }
         if (rewardedAd == null) {
             RewardedAd.load(context, sharedPref.getRewardAdsGoogleAdmob(),
-                    ConsentSDK.getAdRequest(context), new RewardedAdLoadCallback() {
+                     new AdRequest.Builder().build(), new RewardedAdLoadCallback() {
                         @Override
                         public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
                             

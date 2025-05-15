@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         txtCount = findViewById(R.id.txt_click_count);
 
-        AdsShowingClass.showNativeAds(MainActivity.this, findViewById(R.id.frame_native_big), true);
+        AdsShowingClass.showNativeAds(MainActivity.this, findViewById(R.id.frame_native_big), false);
 
         addTextClick();
 
@@ -38,6 +38,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onSingleClick(View v) {
                 startActivity(new Intent(MainActivity.this, SecondActivity.class));
+            }
+        });
+        findViewById(R.id.btn_debug).setOnClickListener(new OnOneOffClickListener() {
+            @Override
+            public void onSingleClick(View v) {
+           AdsShowingClass.openAdmobDebugger(MainActivity.this);
             }
         });
     }

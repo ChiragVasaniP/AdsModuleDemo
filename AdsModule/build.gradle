@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
 }
 
 android {
@@ -25,23 +26,45 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
     namespace 'com.qa.adsshared'
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
 }
 
 dependencies {
 
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.ads.consent:consent-library:1.0.8'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.ump:user-messaging-platform:3.1.0'
+//    implementation 'com.google.android.ads.consent:consent-library:1.0.8'
 //    implementation 'com.google.android.gms:play-services-ads:19.8.0'
-    implementation 'com.google.android.gms:play-services-ads:23.0.0'
-    implementation 'com.facebook.android:audience-network-sdk:6.17.0'
+//    implementation 'com.google.android.gms:play-services-ads:24.2.0'
+    implementation 'com.google.android.gms:play-services-ads:24.2.0'
+    implementation("androidx.datastore:datastore-preferences-core:1.1.6")
+//    implementation "androidx.datastore:datastore-preferences:1.1.6"
 
-    implementation 'com.google.ads.mediation:facebook:6.17.0.0'
-    implementation 'com.applovin.mediation:facebook-adapter:6.12.0.1'
-    implementation 'com.facebook.android:audience-network-sdk:6.17.0'
+    implementation 'com.facebook.android:audience-network-sdk:6.20.0'
+
+//    implementation 'com.google.ads.mediation: facebook:6.20.0.0'
+//    implementation 'com.applovin.mediation:facebook-adapter:6.18.0.1'
+    implementation 'com.facebook.android:audience-network-sdk:6.20.0'
     implementation 'com.github.bumptech.glide:glide:4.16.0'
 
-    implementation 'com.applovin:applovin-sdk:11.4.6'
+    implementation 'com.applovin:applovin-sdk:13.2.0'
     implementation 'com.android.support:multidex:1.0.3'
+
+    // AppLovin SDK & Adapter
+    implementation 'com.applovin:applovin-sdk:13.2.0'
+    implementation 'com.google.ads.mediation:applovin:13.2.0.1' // Use version from [Mediation Docs]
+
+// AdColony SDK & Adapter
+    implementation 'com.adcolony:sdk:4.8.0'
+    implementation 'com.google.ads.mediation:adcolony:4.8.0.2'
+    implementation 'androidx.core:core-ktx:1.13.1'
+
+// Liftoff Monetize (formerly Vungle)
+//    implementation 'com.vungle:publisher-sdk-android:7.2.0'
+//    implementation 'com.google.ads.mediation:vungle:7.5.0.0'
+
 
 
 }

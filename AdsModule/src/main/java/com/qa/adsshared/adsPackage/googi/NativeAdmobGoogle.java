@@ -18,6 +18,7 @@ import androidx.appcompat.widget.AppCompatTextView;
 
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdLoader;
+import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.VideoController;
 import com.google.android.gms.ads.nativead.NativeAd;
@@ -25,7 +26,6 @@ import com.google.android.gms.ads.nativead.NativeAdOptions;
 import com.google.android.gms.ads.nativead.NativeAdView;
 import com.qa.adsshared.FirebaseConfigConst;
 import com.qa.adsshared.R;
-import com.qa.adsshared.adsPackage.ConsentSDK;
 import com.qa.adsshared.adsPackage.appLo.NativeAppLovin;
 import com.qa.adsshared.adsPackage.faci.NativeFacebook;
 import com.qa.adsshared.adsPackage.qureks.NativeQureka;
@@ -37,26 +37,27 @@ import java.util.Locale;
 public class NativeAdmobGoogle {
 
 
-    public static ArrayList<NativeAd> nativeAdsArray;
+//    public static ArrayList<NativeAd> nativeAdsArray;
     public static AdLoader adLoader;
     private static int MAX_AD_COUNT=0;
 
     public static void loadNativeAds(Context context, FrameLayout frameLayout, boolean isShowBig) {
         AdsSharedPref sharedPref = AdsSharedPref.getInstance(context);
         if (sharedPref.getABoolean(FirebaseConfigConst.IS_ADD_SHOW)) {
-            if (nativeAdsArray != null) {
-                if (nativeAdsArray.size() > 0) {
-                    Log.e("TAG_PreLoadNative", "Native ads from array " + nativeAdsArray.size());
-                    loadNativeAdsFromList(context, frameLayout, isShowBig);
-                } else {
-
-                    loadNativeAdsPreload(context, frameLayout, isShowBig);
-                }
-            } else {
-                nativeAdsArray = new ArrayList<>();
-                Log.e("TAG_PreLoadNative", "Native ads first time ");
-                loadNativeAdsPreload(context, frameLayout, isShowBig);
-            }
+            loadNativeAdsPreload(context, frameLayout, isShowBig);
+//            if (nativeAdsArray != null) {
+//                if (nativeAdsArray.size() > 0) {
+//                    Log.e("TAG_PreLoadNative", "Native ads from array " + nativeAdsArray.size());
+//                    loadNativeAdsFromList(context, frameLayout, isShowBig);
+//                } else {
+//
+//                    loadNativeAdsPreload(context, frameLayout, isShowBig);
+//                }
+//            } else {
+//                nativeAdsArray = new ArrayList<>();
+//                Log.e("TAG_PreLoadNative", "Native ads first time ");
+//                loadNativeAdsPreload(context, frameLayout, isShowBig);
+//            }
 
         }
     }
@@ -64,26 +65,27 @@ public class NativeAdmobGoogle {
     public static void loadNativeAdsWithoutPreload(Context context, FrameLayout frameLayout, boolean isShowBig) {
         AdsSharedPref sharedPref = AdsSharedPref.getInstance(context);
         if (sharedPref.getABoolean(FirebaseConfigConst.IS_ADD_SHOW)) {
-            if (nativeAdsArray != null) {
-                if (nativeAdsArray.size() > 0) {
-                    Log.e("TAG_PreLoadNative", "Native ads from array " + nativeAdsArray.size());
-                    loadNativeAdsFromList(context, frameLayout, isShowBig);
-                } else {
-
-                    loadNativeAdsNoPreload(context, frameLayout, isShowBig);
-                }
-            } else {
-                nativeAdsArray = new ArrayList<>();
-                Log.e("TAG_PreLoadNative", "Native ads first time ");
-                loadNativeAdsNoPreload(context, frameLayout, isShowBig);
-            }
+            loadNativeAdsNoPreload(context, frameLayout, isShowBig);
+//            if (nativeAdsArray != null) {
+//                if (nativeAdsArray.size() > 0) {
+//                    Log.e("TAG_PreLoadNative", "Native ads from array " + nativeAdsArray.size());
+//                    loadNativeAdsFromList(context, frameLayout, isShowBig);
+//                } else {
+//
+//                    loadNativeAdsNoPreload(context, frameLayout, isShowBig);
+//                }
+//            } else {
+//                nativeAdsArray = new ArrayList<>();
+//                Log.e("TAG_PreLoadNative", "Native ads first time ");
+//                loadNativeAdsNoPreload(context, frameLayout, isShowBig);
+//            }
 
         }
     }
 
-    public static void loadNativeAdsFromList(Context context, FrameLayout frameLayout, boolean isShowBig) {
-        NativeAd nativeAd = nativeAdsArray.get(nativeAdsArray.size() - 1);
-        nativeAdsArray.remove(nativeAdsArray.size() - 1);
+    public static void loadNativeAdsFromList(Context context, FrameLayout frameLayout, boolean isShowBig,NativeAd nativeAd) {
+//        NativeAd nativeAd = nativeAdsArray.get(nativeAdsArray.size() - 1);
+//        nativeAdsArray.remove(nativeAdsArray.size() - 1);
         if (isShowBig) {
             NativeAdView adView =
                     (NativeAdView) ((Activity) context).getLayoutInflater().inflate(R.layout.ad_unified, frameLayout, false);
@@ -108,19 +110,19 @@ public class NativeAdmobGoogle {
         progressDialog.setContentView(R.layout.dialog_progress);
         progressDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         progressDialog.setCancelable(false);
-        if ( AdsSharedPref.getInstance(context).getInt(FirebaseConfigConst.NATIVE_PRELOAD_COUNT)>1){
-            if (!progressDialog.isShowing()) {
-                progressDialog.show();
-            }
-        }
+//        if ( AdsSharedPref.getInstance(context).getInt(FirebaseConfigConst.NATIVE_PRELOAD_COUNT)>1){
+//            if (!progressDialog.isShowing()) {
+//                progressDialog.show();
+//            }
+//        }
 
 
         AdLoader.Builder builder = new AdLoader.Builder(context, AdsSharedPref.getInstance(context).getNativeAdvancedAdsGoogleAdmob());
         adLoader = builder
                 .forNativeAd(nativeAd -> {
-                    nativeAdsArray.add(nativeAd);
+//                    nativeAdsArray.add(nativeAd);
                     if (!adLoader.isLoading()) {
-                        loadNativeAdsFromList(context, frameLayout, isShowBig);
+                        loadNativeAdsFromList(context, frameLayout, isShowBig,nativeAd);
                     }
                 }).withAdListener(new AdListener() {
                     @Override
@@ -156,7 +158,7 @@ public class NativeAdmobGoogle {
                 )
                 .build();
 
-        adLoader.loadAds(ConsentSDK.getAdRequest(context), AdsSharedPref.getInstance(context).getInt(FirebaseConfigConst.NATIVE_PRELOAD_COUNT));
+        adLoader.loadAds( new AdRequest.Builder().build(),1);
 
     }
 
@@ -174,9 +176,9 @@ public class NativeAdmobGoogle {
         AdLoader.Builder builder = new AdLoader.Builder(context, AdsSharedPref.getInstance(context).getNativeAdvancedAdsGoogleAdmob());
         adLoader = builder
                 .forNativeAd(nativeAd -> {
-                    nativeAdsArray.add(nativeAd);
+//                    nativeAdsArray.add(nativeAd);
                     if (!adLoader.isLoading()) {
-                        loadNativeAdsFromList(context, frameLayout, isShowBig);
+                        loadNativeAdsFromList(context, frameLayout, isShowBig,nativeAd);
                     }
                 }).withAdListener(new AdListener() {
                     @Override
@@ -212,7 +214,7 @@ public class NativeAdmobGoogle {
                 )
                 .build();
 
-            adLoader.loadAds(ConsentSDK.getAdRequest(context),1);
+            adLoader.loadAds( new AdRequest.Builder().build(),1);
 
     }
 
@@ -284,7 +286,7 @@ public class NativeAdmobGoogle {
                 }
             }).build();
 
-            adLoader.loadAd(ConsentSDK.getAdRequest(context));
+            adLoader.loadAd( AdRequest.Builder().build(););
         }
 
     }*/

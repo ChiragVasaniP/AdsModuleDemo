@@ -65,14 +65,16 @@ public class MyApp extends MultiDexApplication implements Application.ActivityLi
     public void onCreate() {
         super.onCreate();
         MultiDex.install(this);
-        AdsShowingClass.initLiseAdsSdk(this);
+
         new AdsSharedPref(this);
         registerActivityLifecycleCallbacks(this);
         ProcessLifecycleOwner.get().getLifecycle().addObserver(this);
+
         mInstance = this;
         this.sContext = getApplicationContext();
         setApplication(this);
         mInstance = this;
+        AdsShowingClass.initLiseAdsSdk(getApplicationContext());
         FirebaseApp.initializeApp(MyApp.this);
         if (Build.VERSION.SDK_INT >= 24) {
             try {

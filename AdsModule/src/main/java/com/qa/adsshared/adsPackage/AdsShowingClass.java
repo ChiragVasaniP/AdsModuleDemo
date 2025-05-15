@@ -9,9 +9,9 @@ import android.widget.FrameLayout;
 
 import androidx.annotation.Nullable;
 
-import com.applovin.sdk.AppLovinSdk;
-import com.applovin.sdk.AppLovinSdkConfiguration;
-import com.facebook.ads.AudienceNetworkAds;
+//import com.applovin.sdk.AppLovinSdk;
+//import com.applovin.sdk.AppLovinSdkConfiguration;
+//import com.facebook.ads.AudienceNetworkAds;
 import com.google.android.gms.ads.AdInspectorError;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.OnAdInspectorClosedListener;
@@ -36,10 +36,12 @@ import com.qa.adsshared.adsPackage.utils.AdsSharedPref;
 import com.qa.adsshared.adsPackage.utils.InternetChecker;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class AdsShowingClass {
-
+    public static AtomicBoolean isMobileAdsInitializeCalled = new AtomicBoolean(false);
     public static int InterStillCounter = 1;
     public static long mLastClickTime = 0;
 
@@ -176,7 +178,7 @@ public class AdsShowingClass {
             } else {
                 if (AdsSharedPref.getInstance(context).getABoolean(FirebaseConfigConst.INTERSTITIAL_ALL_ADS_ON_OFF)) {
                     if (!AdsSharedPref.getInstance(context).getSkipAdsActivityArray().contains(getActivityName(context))) {
-                        if (InterStillCounter == AdsSharedPref.getInstance(context).getInt(FirebaseConfigConst.AD_CLICK_AND_INTERVAL_COUNTER)) {
+                        if (InterStillCounter >= AdsSharedPref.getInstance(context).getInt(FirebaseConfigConst.AD_CLICK_AND_INTERVAL_COUNTER)) {
                             InterStillCounter = 1;
                             mLastClickTime = SystemClock.elapsedRealtime();
                             switch (AdsSharedPref.getInstance(context).getInt(FirebaseConfigConst.ADS_SEQUENCE)) {
@@ -344,31 +346,48 @@ public class AdsShowingClass {
         }
     }
 
-    public static void initLiseAdsSdk(Context context) {
-
-/*
-        AppLovinSdk.getInstance(context).setMediationProvider("max");
-        AppLovinSdk.initializeSdk(context, new AppLovinSdk.SdkInitializationListener() {
-            @Override
-            public void onSdkInitialized(final AppLovinSdkConfiguration configuration) {
-
-            }
-        });
-*/
-
-
-        MobileAds.initialize(context, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-                MobileAds.setAppVolume(0.0f);
-                MobileAds.setAppMuted(AdsSharedPref.getInstance(context).getABoolean(FirebaseConfigConst.IS_ADS_MUTE));
-            }
-        });
+    public static void openAdmobDebugger(Context context){
         MobileAds.openAdInspector(context, new OnAdInspectorClosedListener() {
             public void onAdInspectorClosed(@Nullable AdInspectorError error) {
+                Log.e("TAG_", "onAdInspectorClosed: "+error );
                 // Error will be non-null if ad inspector closed due to an error.
             }
         });
+    }
+
+    public static void initLiseAdsSdk(Context context) {
+
+//        AppLovinSdk.getInstance(context).setMediationProvider("max");
+//        AppLovinSdk.getInstance(context).initialize();
+//        if (isMobileAdsInitializeCalled.getAndSet(true)) {
+//            return ;
+//        }
+        new Thread(
+                () -> {
+                    RequestConfiguration configuration =
+                            new RequestConfiguration.Builder().setTestDeviceIds(Collections.singletonList("D9C79B0B11EB8E1998E1F6AAE20051E3")).build();
+                    MobileAds.setRequestConfiguration(configuration);
+                    // Initialize the Google Mobile Ads SDK on a background thread.
+                    MobileAds.initialize(context, initializationStatus -> {});
+                })
+                .start();
+
+
+    //
+    //        MobileAds.initialize(context, new OnInitializationCompleteListener() {
+    //            @Override
+    //            public void onInitializationComplete(InitializationStatus initializationStatus) {
+    //                Log.e("TAG_", "onInitializationComplete: "+initializationStatus );
+    //
+    //                MobileAds.setAppVolume(0.0f);
+    //                MobileAds.setAppMuted(AdsSharedPref.getInstance(context).getABoolean(FirebaseConfigConst.IS_ADS_MUTE));
+    //            }
+    //        });
+    //        MobileAds.openAdInspector(context, new OnAdInspectorClosedListener() {
+    //            public void onAdInspectorClosed(@Nullable AdInspectorError error) {
+    //                // Error will be non-null if ad inspector closed due to an error.
+    //            }
+    //        });
   /*      List<String> testDeviceIds = Arrays.asList("33BE2250B43518CCDA7DE426D04EE231");
         RequestConfiguration configuration =
                 new RequestConfiguration.Builder().setTestDeviceIds(testDeviceIds).build();

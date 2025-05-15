@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,20 +15,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JenilAdsSetupFull"
         tools:targetApi="31">
-
-        <property
-            android:name="android.adservices.AD_SERVICES_CONFIG"
-            android:resource="@xml/gma_ad_services_config"
-            tools:replace="android:resource" />
-
         <activity
-            android:name="com.demo.example.activity.SecondActivity"
+            android:name=".activity.MainActivity2"
+            android:exported="false"
+            android:theme="@style/Theme.JenilAdsSetupFull" />
+        <!-- <property -->
+        <!-- android:name="android.adservices.AD_SERVICES_CONFIG" -->
+        <!-- android:resource="@xml/gma_ad_services_config" -->
+        <!-- tools:replace="android:resource" /> -->
+        <activity
+            android:name=".activity.SecondActivity"
             android:exported="false" />
         <activity
-            android:name="com.demo.example.activity.MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="false" />
         <activity
-            android:name="com.demo.example.activity.SplashActivity"
+            android:name=".activity.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,7 +38,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <meta-data
+            android:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION"
+            android:value="true"/>
+        <meta-data
+            android:name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING "
+            android:value="true"/>
         <meta-data
             android:name="com.google.android.gms.ads.AD_MANAGER_APP"
             android:value="true" />

@@ -1,36 +1,26 @@
 {
   "project_info": {
-    "project_number": "791961228784",
-    "project_id": "jenil-full-ads-setup",
-    "storage_bucket": "jenil-full-ads-setup.appspot.com"
+    "project_number": "1062841038778",
+    "project_id": "fir-chirag-projects",
+    "storage_bucket": "fir-chirag-projects.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:791961228784:android:9dc2cb4877235c03c6f935",
+        "mobilesdk_app_id": "1:1062841038778:android:c483786638bb2b0fec8f83",
         "android_client_info": {
           "package_name": "com.demo.example"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "791961228784-cpo54co6ogdvmhpaanmemhuip8hsi08e.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAQav6SH3RZGQvEWkjIiOysC33K1N_XAvQ"
+          "current_key": "AIzaSyDeZ_HJI8Xo7I4I7EU8A5T2EVmuMZzFB9g"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "791961228784-cpo54co6ogdvmhpaanmemhuip8hsi08e.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

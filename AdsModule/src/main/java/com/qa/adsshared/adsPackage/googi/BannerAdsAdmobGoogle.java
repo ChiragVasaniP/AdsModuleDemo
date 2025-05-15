@@ -9,11 +9,11 @@ import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 
 import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.LoadAdError;
 import com.qa.adsshared.FirebaseConfigConst;
-import com.qa.adsshared.adsPackage.ConsentSDK;
 import com.qa.adsshared.adsPackage.appLo.BannerAdsAppLovin;
 import com.qa.adsshared.adsPackage.faci.BannerAdsFaceBook;
 import com.qa.adsshared.adsPackage.qureks.BannerAdsQureka;
@@ -24,26 +24,37 @@ public class BannerAdsAdmobGoogle {
     public static void loadAdvanceBannerAds(Context context, FrameLayout bannerFrameLayout) {
         AdView adView = new AdView(context);
         adView.setAdUnitId(AdsSharedPref.getInstance(context).getBannerAdsGoogleAdmob());
+        // [START set_ad_size]
+        // Request an anchored adaptive banner with a width of 360.
+        adView.setAdSize(AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(context, 360));
+        bannerFrameLayout.removeAllViews();
         bannerFrameLayout.addView(adView);
-        AdSize adSize = getAdSize(context);
-        adView.setAdSize(adSize);
-        adView.loadAd(ConsentSDK.getAdRequest(context));
-        adView.setAdListener(new AdListener() {
-            @Override
-            public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
-                super.onAdFailedToLoad(loadAdError);
-                if (AdsSharedPref.getInstance(context).getInt(FirebaseConfigConst.ADS_SEQUENCE) == FirebaseConfigConst.ADMOB_FAIL_SHOW_FB) {
-                    BannerAdsFaceBook.loadBanner90(context, bannerFrameLayout);
-                } else if (AdsSharedPref.getInstance(context).getInt(FirebaseConfigConst.ADS_SEQUENCE) == FirebaseConfigConst.ADMOB_FAIL_SHOW_FB_FAIL_QUEREKA) {
-                    BannerAdsFaceBook.loadBanner90(context, bannerFrameLayout);
-                } else if (AdsSharedPref.getInstance(context).getInt(FirebaseConfigConst.ADS_SEQUENCE) == FirebaseConfigConst.FB_FAIL_SHOW_ADMOB_FAIL_QUREKA) {
-                    BannerAdsQureka.loadBannerQureka(context, bannerFrameLayout);
-                }
-                else if (AdsSharedPref.getInstance(context).getInt(FirebaseConfigConst.ADS_SEQUENCE) == FirebaseConfigConst.ADMOB_FAIL_SHOW_APPLOVIN) {
-                    BannerAdsAppLovin.callBannerAd(context, bannerFrameLayout);
-                }
-            }
-        });
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+        // [END set_ad_size]
+//        this.adView = adView
+//        AdView adView = new AdView(context);
+//        adView.setAdUnitId(AdsSharedPref.getInstance(context).getBannerAdsGoogleAdmob());
+//        bannerFrameLayout.addView(adView);
+//        AdSize adSize = getAdSize(context);
+//        adView.setAdSize(adSize);
+//        adView.loadAd( new AdRequest.Builder().build());
+//        adView.setAdListener(new AdListener() {
+//            @Override
+//            public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
+//                super.onAdFailedToLoad(loadAdError);
+//                if (AdsSharedPref.getInstance(context).getInt(FirebaseConfigConst.ADS_SEQUENCE) == FirebaseConfigConst.ADMOB_FAIL_SHOW_FB) {
+//                    BannerAdsFaceBook.loadBanner90(context, bannerFrameLayout);
+//                } else if (AdsSharedPref.getInstance(context).getInt(FirebaseConfigConst.ADS_SEQUENCE) == FirebaseConfigConst.ADMOB_FAIL_SHOW_FB_FAIL_QUEREKA) {
+//                    BannerAdsFaceBook.loadBanner90(context, bannerFrameLayout);
+//                } else if (AdsSharedPref.getInstance(context).getInt(FirebaseConfigConst.ADS_SEQUENCE) == FirebaseConfigConst.FB_FAIL_SHOW_ADMOB_FAIL_QUREKA) {
+//                    BannerAdsQureka.loadBannerQureka(context, bannerFrameLayout);
+//                }
+//                else if (AdsSharedPref.getInstance(context).getInt(FirebaseConfigConst.ADS_SEQUENCE) == FirebaseConfigConst.ADMOB_FAIL_SHOW_APPLOVIN) {
+//                    BannerAdsAppLovin.callBannerAd(context, bannerFrameLayout);
+//                }
+//            }
+//        });
     }
 
 
